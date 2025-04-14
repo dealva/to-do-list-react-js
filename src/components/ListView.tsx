@@ -31,11 +31,11 @@ export const ListView: React.FC<ListViewProps> = ({
         >
           <div>
             <h3 className="text-lg font-semibold">{task.title}</h3>
-            {!task.isCompleted && (
+            
               <p className="text-black">
                 Deadline: {new Date(task.deadline).toLocaleDateString()}
               </p>
-            )}
+            
           </div>
           <div className="space-x-2">
             {!task.isCompleted && !overdueTasks.includes(task.id) && (
