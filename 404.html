@@ -14,7 +14,8 @@
           (function() {
             const { origin, pathname } = window.location;
             const basePath = origin + pathname.split('/').slice(0, 3).join('/') + '/';
-            window.location.replace(basePath);
+            console.log(basePath);
+            
           })();
         </script>
 </body>
