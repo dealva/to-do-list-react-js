@@ -10,6 +10,12 @@
   </head>
   <body>
     
-  <meta http-equiv="refresh" content="0; url=./" />
+  <script>
+          (function() {
+            const { origin, pathname } = window.location;
+            const basePath = origin + pathname.split('/').slice(0, 3).join('/') + '/';
+            window.location.replace(basePath);
+          })();
+        </script>
 </body>
 </html>
