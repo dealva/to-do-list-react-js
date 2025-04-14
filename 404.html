@@ -14,6 +14,7 @@
           (function() {
             const { origin, pathname } = window.location;
             const basePath = origin + pathname.split('/').slice(0, 3).join('/') + '/';
+            console.log("check link")
             console.log(basePath);
             
           })();
